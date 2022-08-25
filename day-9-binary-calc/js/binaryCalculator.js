@@ -8,7 +8,8 @@ const btn1 = document.getElementById("btn1");
 console.log(btns);
 
 btns.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    console.log("click");
+  btn.addEventListener("click", function (e) {
+    const curTarget = e.target.id;
+    console.log(curTarget);
   });
 });

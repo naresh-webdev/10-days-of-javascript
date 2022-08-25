@@ -30,14 +30,56 @@ btns.forEach((btn) => {
       console.log(res.textContent);
 
       const resValue = res.textContent;
+
       if (resValue.indexOf("+") !== -1) {
-        console.log("addition");
+        // Addition operation
+        const iAdd = resValue.indexOf("+");
+        const operand1 = resValue.slice(0, iAdd);
+        const operand2 = resValue.slice(iAdd + 1);
+
+        // binary to decimal conversion
+
+        // decimal operation
+
+        // decimal to binary convertion
+
+        //
       } else if (resValue.indexOf("-") !== -1) {
-        console.log("sub");
+        const iSub = resValue.indexOf("-");
+        const operand1 = resValue.slice(0, iSub);
+        const operand2 = resValue.slice(iSub + 1);
+
+        // binary to decimal conversion
+
+        // decimal operation
+
+        // decimal to binary convertion
+
+        //
       } else if (resValue.indexOf("*") !== -1) {
-        console.log("Mul");
+        const iMul = resValue.indexOf("*");
+        const operand1 = resValue.slice(0, iMul);
+        const operand2 = resValue.slice(iMul + 1);
+
+        // binary to decimal conversion
+
+        // decimal operation
+
+        // decimal to binary convertion
+
+        //
       } else if (resValue.indexOf("/") !== -1) {
-        console.log("div");
+        const iDiv = resValue.indexOf("/");
+        const operand1 = resValue.slice(0, iDiv);
+        const operand2 = resValue.slice(iDiv + 1);
+
+        // binary to decimal conversion
+
+        // decimal operation
+
+        // decimal to binary convertion
+
+        //
       } else {
         alert("invalid operation");
       }
